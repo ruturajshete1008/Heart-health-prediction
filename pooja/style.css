@@ -1,0 +1,66 @@
+body {
+    background-color: #ededed;
+}
+
+nav.navbar-default {
+    background-color: white;
+}
+
+.main-chart-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.pulse-line-image {
+    float: left;
+    width: 250px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+@media (max-width: 991.98px) { 
+    .main-chart-image {
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+.secondary-chart-image {
+    float: left;
+   
+    /*margin-right: 15px;*/
+}
+
+.chart-container {
+    background-color: white;
+    padding: 15px;
+}
+
+hr.line-separator{
+	border-top: 1px solid #ede3e3;
+}
+
+h1, h2, h3 {
+    color: #B22222;
+}
+
+.navbar-default .navbar-brand {
+    background-color: #B22222;
+    color:white;
+}
+
+.comparison {
+    background-color: white;
+}
+.comparison-container {
+    padding: 15px;
+}
+.compare-title {
+    text-align: center;
+    padding-top:15px;
+}
+.comparison-chart-image {
+    width: 100%;
+}
