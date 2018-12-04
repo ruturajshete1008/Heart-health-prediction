@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heart Health Analysis</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+
+</head>
+
+<body>  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+      <img src="" alt="Pulse Line" class="pulse-line-image">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+        <ul class="nav navbar-nav navbar-right">            
+            <li><a href="health-prediction.html">Health Prediction</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="col-md-10">
+    <div id="table-area" class="">
+      <table id="heart-table" class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th class="table-head">Patient id</th>
+            <th class="table-head">Slope of the peak exercise ST segment</th>
+            <th class="table-head">Thallium stress test</th>
+            <th class="table-head">Resting blood pressure</th>
+            <th class="table-head">Chest pain type</th>
+            <th class="table-head">Number of major vessels</th>
+            <th class="table-head">Fasting blood sugar > 120 (mg/dl)</th>
+            <th class="table-head">Resting electrocardiographic results</th>
+            <th class="table-head">Serum cholestoral (mg/dl)</th>
+            <th class="table-head">Oldpeak = ST depression induced by exercise relative to rest</th>
+            <th class="table-head">Sex</th>
+            <th class="table-head">Age</th>
+            <th class="table-head">Maximum heart rate achieved (beats/minute)</th>
+            <th class="table-head">Exercise-induced chest pain</th>
+            
+
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="data.js"></script>
+
+</body>
+
+</html>
