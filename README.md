@@ -6,6 +6,8 @@ Heart disease is the leading cause of death in the United States. The term “he
 
 ## Heart Disease in the United States
 
+![2-BasicMap](fs_heart_disease.png)
+
 About 610,000 people die of heart disease in the United States every year–that’s 1 in every 4 deaths.
 
 Heart disease is the leading cause of death for both men and women. More than half of the deaths due to heart disease in 2009 were in men.
