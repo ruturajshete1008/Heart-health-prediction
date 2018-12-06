@@ -4,13 +4,14 @@ d3.json('/hong').then(data => {
 
     var tbody = d3.select("tbody");
 
-        Object.entries(data).forEach(([key, value]) => {
-            var row = tbody.append("tr");
+    data.forEach(d => {
+        console.log(d);
 
-            for (i = 0; i < value.length; i++) {
-            var cell = tbody.append("td");
-            cell.text(value[i]);
-            }
+        var row = tbody.append("tr");
+        Object.entries(d).forEach(([key, value]) => {
+        var cell = tbody.append("td");
+        cell.text(value);
+        });
     });
 
 

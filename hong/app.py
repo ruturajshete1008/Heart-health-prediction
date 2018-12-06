@@ -37,9 +37,13 @@
 #     app.run()
 from flask import Flask, jsonify, render_template
 import pandas as pd
+import pymongo
+from pymongo import MongoClient
 
 # initialize flask app
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
+
 
 # read the data and merge it 
 df_labels = pd.read_csv('db/train_labels.csv')
@@ -49,6 +53,16 @@ merged_df = pd.merge(df_values, df_labels, how='inner', on='patient_id')
 # filter dataframe for with and w/o HD
 merged_df_1 = merged_df.drop(merged_df.index[(merged_df.heart_disease_present.eq(0))])
 merged_df_0 = merged_df.drop(merged_df.index[(merged_df.heart_disease_present.eq(1))])
+
+client = MongoClient('mongodb://localhost:27017/')
+db = client.heart_data
+
+collection = db.train_values
+
+listt = []
+for obj in collection.find():
+    obj.pop("_id")
+    listt.append(obj)
 
 
 
@@ -69,11 +83,9 @@ def data():
     return render_template('data.html')
 
 @app.route('/hong')
-def hong():
-    d = {"id": list(merged_df['patient_id']),
-         "s": list(merged_df['slope_of_peak_exercise_st_segment'])}
+def hong():      
 
-    return jsonify(d)
+    return jsonify(listt)
 
 if __name__ == '__main__':
     app.run(debug=True)
