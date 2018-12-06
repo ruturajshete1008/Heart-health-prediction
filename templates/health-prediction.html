@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="/">Home</a>
       </div>
       <img src="../static/resources/pulse-line.png" alt="Pulse Line" class="pulse-line-image">
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -90,7 +90,7 @@
 
             <div class="form-group form-inline">
                 <label class="col-md-6" for="peak-exercise">Slope of Peak Exercise: </label>
-                <input type="text" class="form-control" id="peak-exercise">
+                <input type="text" class="form-control" placeholder="(values 1,2,3)" id="peak-exercise">
             </div>
 
             <div class="form-group form-inline">
@@ -101,10 +101,10 @@
             <div class="form-group">
                 <label class="col-md-6">Fasting Blood Sugar: </label>
                 <div class="radio-inline">
-                    <input type="radio" name="blood-sugar" value="gt120">&gt;120
+                    <input type="radio" name="bloodsugar" value="gt120">&gt;120
                 </div>
                 <div class="radio-inline">
-                    <input type="radio" name="blood-sugar" value="le120">&le;120
+                    <input type="radio" name="bloodsugar" value="le120">&le;120
                 </div>
             </div>   
 
@@ -126,10 +126,10 @@
             <div class="form-group">
               <label class="col-md-6">Exercise Induced Angina: </label>
                 <div class="radio-inline">
-                    <input type="radio" name="angina" value="1">Yes
+                    <input type="radio" name="angina" value="yes">Yes
                 </div>
                 <div class="radio-inline">
-                    <input type="radio" name="angina" value="0">No
+                    <input type="radio" name="angina" value="no">No
                 </div>
             </div>   
             <button type="button" onclick="healthPrediction()" class="btn btn-primary">Submit</button>
@@ -137,6 +137,12 @@
         </div>
         <div id="results" class="col-md-6  hidden">
           <h3>Results</h3>
+            <div id="heartdisease" class="hidden">
+                There is a probability of a heart disease.
+            </div>
+            <div id="noheartdisease" class="hidden">
+                There is no probability of a heart disease.
+            </div>
         </div>
       </div> <!-- end of div class row -->
     </div> 
