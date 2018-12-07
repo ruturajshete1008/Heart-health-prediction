@@ -40,36 +40,49 @@
   </nav>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="chart-container">
-          <h1>Data</h1>
-          <hr class="line-separator">
-          <p>
-            <span class="chart-text"> 
-              Please provide input to the following measures:</br>
-            </span>
-            <ul>
-                <li>slope_of_peak_exercise_st_segment (type: int): the slope of the peak exercise ST segment, an electrocardiography read out indicating quality of blood flow to the heart</li>
-                <li>thal (type: categorical): results of thallium stress test measuring blood flow to the heart, with possible values normal, fixed_defect, reversible_defect</li>
-                <li>resting_blood_pressure (type: int): resting blood pressure</li>
-                <li>chest_pain_type (type: int): chest pain type (4 values)</li>
-                <li>num_major_vessels (type: int): number of major vessels (0-3) colored by flourosopy</li>
-                <li>fasting_blood_sugar_gt_120_mg_per_dl (type: binary): fasting blood sugar > 120 mg/dl</li>
-                <li>resting_ekg_results (type: int): resting electrocardiographic results (values 0,1,2)</li>
-                <li>serum_cholesterol_mg_per_dl (type: int): serum cholestoral in mg/dl</li>
-                <li>oldpeak_eq_st_depression (type: float): oldpeak = ST depression induced by exercise relative to rest, a measure of abnormality in electrocardiograms</li>
-                <li>sex (type: binary): 0: female, 1: male</li>
-                <li>age (type: int): age in years</li>
-                <li>max_heart_rate_achieved (type: int): maximum heart rate achieved (beats per minute)</li>
-                <li>exercise_induced_angina (type: binary): exercise-induced chest pain (0: False, 1: True)</li>
-            </ul>
-          </p>
+      <div class="chart-container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Sample Data</h1>
+            <hr class="line-separator">
+            
+          </div>
         </div>
-        
-    </div>
+          <div class="col-md-10">
+              <div id="table-area" class="">
+                <table id="heart-table" class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="table-head">Patient id</th>
+                      <th class="table-head">Slope of the peak exercise ST segment</th>
+                      <th class="table-head">Thallium stress test</th>
+                      <th class="table-head">Resting blood pressure</th>
+                      <th class="table-head">Chest pain type</th>
+                      <th class="table-head">Number of major vessels</th>
+                      <th class="table-head">Fasting blood sugar > 120 (mg/dl)</th>
+                      <th class="table-head">Resting electrocardiographic results</th>
+                      <th class="table-head">Serum cholestoral (mg/dl)</th>
+                      <th class="table-head">Oldpeak = ST depression induced by exercise relative to rest</th>
+                      <th class="table-head">Sex</th>
+                      <th class="table-head">Age</th>
+                      <th class="table-head">Maximum heart rate achieved (beats/minute)</th>
+                      <th class="table-head">Exercise-induced chest pain</th>
+                      
+          
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          
+                
+    
     </div>  
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/data.js"></script>
 
 </body>
 
