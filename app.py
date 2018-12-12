@@ -47,7 +47,7 @@ def chart():
     my_data = {"age_hd": list(merged_df_1['age']), "age_no_hd": list(merged_df_0['age'])}
     return jsonify(my_data)
 
-@app.route('/table-content')
+@app.route('/table')
 def tab_content():      
     return jsonify(listt)
 
