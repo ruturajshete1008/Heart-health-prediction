@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template
 import pandas as pd
+import os
 import pymongo
 from pymongo import MongoClient
 
@@ -16,7 +17,10 @@ merged_df = pd.merge(df_values, df_labels, how='inner', on='patient_id')
 merged_df_1 = merged_df.drop(merged_df.index[(merged_df.heart_disease_present.eq(0))])
 merged_df_0 = merged_df.drop(merged_df.index[(merged_df.heart_disease_present.eq(1))])
 
-client = MongoClient('mongodb://localhost:27017/')
+conn = os.environ.get('MONGODB_URI')
+if not conn:
+    conn = 'mongodb://localhost:27017/'
+client = MongoClient(conn)
 db = client.heart_data
 collection = db.train_values
 listt = []
