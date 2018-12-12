@@ -1,4 +1,4 @@
-d3.json('/table-content').then(data => {
+d3.json('/table').then(data => {
     console.log(data);
 
 
