@@ -1,1 +1,1 @@
-web: gunicorn heart_health_prediction.app:app
+web: gunicorn heart-health-prediction.app:app
