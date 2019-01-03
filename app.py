@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template
 import pandas as pd
 import os
 import pymongo
+from flask import send_from_directory
 from pymongo import MongoClient
 
 # initialize flask app
@@ -32,6 +33,11 @@ for obj in collection.find():
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'Images'),
+                               'favicon.ico', mimetype='image/png')
 
 @app.route('/analysis')
 def analysis():
