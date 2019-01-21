@@ -1,12 +1,12 @@
 # Heart-health-prediction
 
-![1-Logo](heart-health-series-img-final.jpg)
+![1-Logo](Images/heart-health-series-img-final.jpg)
 
 Heart disease is the leading cause of death in the United States. The term “heart disease” refers to several types of heart conditions. The most common type is coronary artery disease, which can cause heart attack. Other kinds of heart disease may involve the valves in the heart, or the heart may not pump well and cause heart failure. Some people are born with heart disease.
 
 ## Heart Disease in the United States
 
-![2-BasicMap](fs_heart_disease.png)
+![2-BasicMap](Images/fs_heart_disease.png)
 
 About 610,000 people die of heart disease in the United States every year–that’s 1 in every 4 deaths.
 
