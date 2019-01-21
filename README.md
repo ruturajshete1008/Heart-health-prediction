@@ -14,3 +14,4 @@ Heart disease is the leading cause of death for both men and women. More than ha
 
 Coronary heart disease (CHD) is the most common type of heart disease, killing over 370,000 people annually. Every year about 735,000 Americans have a heart attack. Of these, 525,000 are a first heart attack and 210,000 happen in people who have already had a heart attack.
 
+### Logistic Regression Prediction Model
