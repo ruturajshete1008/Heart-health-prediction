@@ -16,4 +16,4 @@ Coronary heart disease (CHD) is the most common type of heart disease, killing o
 
 ### Logistic Regression Prediction Model
 
-![3-AUC_ROC Plot](ruturaj/roc_auc plot.png)
+![3-BasicMap](ruturaj/roc_auc plot.png)
